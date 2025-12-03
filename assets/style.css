@@ -29,7 +29,6 @@ a{
     position: relative;
     max-width: 1400px;
     margin: 0 auto;
-    padding-top: 80px;
 }
 
 /* Header */
@@ -145,7 +144,6 @@ nav a:hover::after {
 
 /* Hero Section */
 .hero {
-    min-height: 90vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -654,6 +652,16 @@ footer {
 }
 
 /* Mobile Responsive */
+@media (min-width: 768px) {
+    .hero {
+        min-height: 90vh;
+    }
+
+    .mockup-frame {
+        padding-top: 80px;
+    }
+}
+
 @media (max-width: 768px) {
     header {
         padding: 20px 25px;
@@ -673,7 +681,6 @@ footer {
         top: 0;
         right: -100%;
         width: 100%;
-        max-width: 300px;
         height: 100vh;
         background: rgba(10, 10, 10, 0.98);
         backdrop-filter: blur(20px);
@@ -744,6 +751,11 @@ footer {
 
     .hero-content {
         padding: 60px 25px;
+        text-align: center;
+    }
+
+    .hero-content .cta-group{
+        justify-content: center;
     }
 
     .hero h1 {
